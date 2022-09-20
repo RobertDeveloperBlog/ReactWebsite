@@ -29,7 +29,7 @@ export default class About extends Component {
             <Col sm={9}>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
-                  <img src="https://s3-alpha.figma.com/hub/file/560731507/027faadf-4fc4-4618-8bbf-e0e6702ca1a8-cover.png" />
+                  <img src="https://avatars.mds.yandex.net/i?id=05f645eddfec4b562bf2391b19ead0bf-4303862-images-thumbs&n=13&exp=1" />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fugit, minus commodi dolorem omnis exercitationem, dolor
@@ -38,7 +38,7 @@ export default class About extends Component {
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <img src="" />
+                  <img src="https://www.arimenerji.com.tr/uploads/images/hizmet_proje_bazli_profesyonel_satin_alma.jpg" />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fugit, minus commodi dolorem omnis exercitationem, dolor
@@ -47,7 +47,7 @@ export default class About extends Component {
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  <img src="https://s3-alpha.figma.com/hub/file/1511174180/cbbbae94-5efb-428f-956a-a1920448f8b5-cover.png" />
+                  <img src="https://mediahelm.ie/wp-content/uploads/web-design-Trends.jpg" />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fugit, minus commodi dolorem omnis exercitationem, dolor
@@ -56,7 +56,7 @@ export default class About extends Component {
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="fourth">
-                  <img src="https://s3-alpha.figma.com/hub/file/1511174180/cbbbae94-5efb-428f-956a-a1920448f8b5-cover.png" />
+                  <img src="https://miro.medium.com/max/1400/1*B6QbI7hrMHdeYfc2uuyJ9Q.jpeg" />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fugit, minus commodi dolorem omnis exercitationem, dolor
@@ -65,7 +65,7 @@ export default class About extends Component {
                   </p>
                 </Tab.Pane>
                 <Tab.Pane eventKey="fifth">
-                  <img src="https://s3-alpha.figma.com/hub/file/1511174180/cbbbae94-5efb-428f-956a-a1920448f8b5-cover.png" />
+                  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.themagazine.org%2Fwp-content%2Fuploads%2F2020%2F06%2Fe9a8b6f2-8a53-41fe-a792-f3169f9ffbe0-896x504.jpg&f=1&nofb=1" />
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fugit, minus commodi dolorem omnis exercitationem, dolor
