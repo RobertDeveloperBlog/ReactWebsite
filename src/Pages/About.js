@@ -27,7 +27,7 @@ export default class About extends Component {
               </Nav>
             </Col>
             <Col sm={9}>
-              <Tab.Content>
+              <Tab.Content className="mt-3">
                 <Tab.Pane eventKey="first">
                   <img src="https://avatars.mds.yandex.net/i?id=05f645eddfec4b562bf2391b19ead0bf-4303862-images-thumbs&n=13&exp=1" />
                   <p>
