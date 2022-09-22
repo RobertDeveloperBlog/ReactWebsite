@@ -1,0 +1,150 @@
+[debug] [2022-09-22T22:27:37.776Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T22:27:37.780Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-22T22:27:37.782Z] CLI Version:   11.10.0
+[debug] [2022-09-22T22:27:37.782Z] Platform:      win32
+[debug] [2022-09-22T22:27:37.782Z] Node Version:  v16.17.0
+[debug] [2022-09-22T22:27:37.788Z] Time:          Fri Sep 23 2022 01:27:37 GMT+0300 (Москва, стандартное время)
+[debug] [2022-09-22T22:27:37.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T22:27:37.908Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T22:27:37.909Z] > authorizing via signed-in user (robert.askarov43@gmail.com)
+[debug] [2022-09-22T22:27:37.909Z] [iam] checking project mylovelyreactwebsite for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-22T22:27:37.913Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions [none]
+[debug] [2022-09-22T22:27:37.914Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions x-goog-quota-user=projects/mylovelyreactwebsite
+[debug] [2022-09-22T22:27:37.914Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T22:27:38.749Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions 200
+[debug] [2022-09-22T22:27:38.749Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T22:27:38.752Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite [none]
+[debug] [2022-09-22T22:27:39.115Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite 200
+[debug] [2022-09-22T22:27:39.116Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite {"projectId":"mylovelyreactwebsite","projectNumber":"761218470962","displayName":"mylovelyreactwebsite","name":"projects/mylovelyreactwebsite","resources":{"hostingSite":"mylovelyreactwebsite"},"state":"ACTIVE","etag":"1_d233983b-3e35-4b75-be07-27c313cd4d92"}
+[info] 
+[info] === Deploying to 'mylovelyreactwebsite'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-22T22:27:39.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite [none]
+[debug] [2022-09-22T22:27:39.527Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite 200
+[debug] [2022-09-22T22:27:39.528Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite {"projectId":"mylovelyreactwebsite","projectNumber":"761218470962","displayName":"mylovelyreactwebsite","name":"projects/mylovelyreactwebsite","resources":{"hostingSite":"mylovelyreactwebsite"},"state":"ACTIVE","etag":"1_d233983b-3e35-4b75-be07-27c313cd4d92"}
+[debug] [2022-09-22T22:27:39.536Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions [none]
+[debug] [2022-09-22T22:27:39.537Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-22T22:27:40.856Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions 200
+[debug] [2022-09-22T22:27:40.856Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions {"name":"projects/761218470962/sites/mylovelyreactwebsite/versions/ae820dc8345be850","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[mylovelyreactwebsite]: beginning deploy... 
+[debug] [2022-09-22T22:27:41.040Z] Error: EPERM: operation not permitted, scandir 'C:/ProjectsVsCode/React Website/react-website-main/build/index.html'
+    at Object.readdirSync (node:fs:1442:3)
+    at GlobSync._readdir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:39:49)
+    at deploy (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:84:12)
+    at chain (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:15)
+    at deploy (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-09-22T22:33:57.662Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T22:33:57.667Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-22T22:33:57.668Z] CLI Version:   11.10.0
+[debug] [2022-09-22T22:33:57.668Z] Platform:      win32
+[debug] [2022-09-22T22:33:57.669Z] Node Version:  v16.17.0
+[debug] [2022-09-22T22:33:57.671Z] Time:          Fri Sep 23 2022 01:33:57 GMT+0300 (Москва, стандартное время)
+[debug] [2022-09-22T22:33:57.671Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T22:33:57.820Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T22:33:57.821Z] > authorizing via signed-in user (robert.askarov43@gmail.com)
+[debug] [2022-09-22T22:33:57.821Z] [iam] checking project mylovelyreactwebsite for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-22T22:33:57.826Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions [none]
+[debug] [2022-09-22T22:33:57.827Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions x-goog-quota-user=projects/mylovelyreactwebsite
+[debug] [2022-09-22T22:33:57.827Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T22:33:58.750Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions 200
+[debug] [2022-09-22T22:33:58.751Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T22:33:58.755Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite [none]
+[debug] [2022-09-22T22:33:59.229Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite 200
+[debug] [2022-09-22T22:33:59.230Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite {"projectId":"mylovelyreactwebsite","projectNumber":"761218470962","displayName":"mylovelyreactwebsite","name":"projects/mylovelyreactwebsite","resources":{"hostingSite":"mylovelyreactwebsite"},"state":"ACTIVE","etag":"1_d233983b-3e35-4b75-be07-27c313cd4d92"}
+[info] 
+[info] === Deploying to 'mylovelyreactwebsite'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-22T22:33:59.249Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite [none]
+[debug] [2022-09-22T22:33:59.638Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite 200
+[debug] [2022-09-22T22:33:59.639Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite {"projectId":"mylovelyreactwebsite","projectNumber":"761218470962","displayName":"mylovelyreactwebsite","name":"projects/mylovelyreactwebsite","resources":{"hostingSite":"mylovelyreactwebsite"},"state":"ACTIVE","etag":"1_d233983b-3e35-4b75-be07-27c313cd4d92"}
+[debug] [2022-09-22T22:33:59.647Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions [none]
+[debug] [2022-09-22T22:33:59.648Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-22T22:34:00.924Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions 200
+[debug] [2022-09-22T22:34:00.925Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions {"name":"projects/761218470962/sites/mylovelyreactwebsite/versions/69644ad7846d9034","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[mylovelyreactwebsite]: beginning deploy... 
+[debug] [2022-09-22T22:34:01.089Z] Error: EPERM: operation not permitted, scandir 'C:/ProjectsVsCode/React Website/react-website-main/build/index.html'
+    at Object.readdirSync (node:fs:1442:3)
+    at GlobSync._readdir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:39:49)
+    at deploy (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:84:12)
+    at chain (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:15)
+    at deploy (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-09-22T22:34:45.281Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T22:34:45.287Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-22T22:34:45.288Z] CLI Version:   11.10.0
+[debug] [2022-09-22T22:34:45.289Z] Platform:      win32
+[debug] [2022-09-22T22:34:45.289Z] Node Version:  v16.17.0
+[debug] [2022-09-22T22:34:45.291Z] Time:          Fri Sep 23 2022 01:34:45 GMT+0300 (Москва, стандартное время)
+[debug] [2022-09-22T22:34:45.292Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T22:34:45.496Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T22:34:45.497Z] > authorizing via signed-in user (robert.askarov43@gmail.com)
+[debug] [2022-09-22T22:34:45.497Z] [iam] checking project mylovelyreactwebsite for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-22T22:34:45.502Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions [none]
+[debug] [2022-09-22T22:34:45.502Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions x-goog-quota-user=projects/mylovelyreactwebsite
+[debug] [2022-09-22T22:34:45.503Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T22:34:46.354Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions 200
+[debug] [2022-09-22T22:34:46.354Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mylovelyreactwebsite:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T22:34:46.358Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite [none]
+[debug] [2022-09-22T22:34:46.744Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite 200
+[debug] [2022-09-22T22:34:46.745Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite {"projectId":"mylovelyreactwebsite","projectNumber":"761218470962","displayName":"mylovelyreactwebsite","name":"projects/mylovelyreactwebsite","resources":{"hostingSite":"mylovelyreactwebsite"},"state":"ACTIVE","etag":"1_d233983b-3e35-4b75-be07-27c313cd4d92"}
+[info] 
+[info] === Deploying to 'mylovelyreactwebsite'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-22T22:34:46.763Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite [none]
+[debug] [2022-09-22T22:34:47.148Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite 200
+[debug] [2022-09-22T22:34:47.149Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mylovelyreactwebsite {"projectId":"mylovelyreactwebsite","projectNumber":"761218470962","displayName":"mylovelyreactwebsite","name":"projects/mylovelyreactwebsite","resources":{"hostingSite":"mylovelyreactwebsite"},"state":"ACTIVE","etag":"1_d233983b-3e35-4b75-be07-27c313cd4d92"}
+[debug] [2022-09-22T22:34:47.157Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions [none]
+[debug] [2022-09-22T22:34:47.158Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-22T22:34:48.381Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions 200
+[debug] [2022-09-22T22:34:48.381Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/761218470962/sites/mylovelyreactwebsite/versions {"name":"projects/761218470962/sites/mylovelyreactwebsite/versions/4323035565ef1e36","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[mylovelyreactwebsite]: beginning deploy... 
+[debug] [2022-09-22T22:34:48.529Z] Error: EPERM: operation not permitted, scandir 'C:/ProjectsVsCode/React Website/react-website-main/build/index.html'
+    at Object.readdirSync (node:fs:1442:3)
+    at GlobSync._readdir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:39:49)
+    at deploy (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:84:12)
+    at chain (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:15)
+    at deploy (C:\Users\ellio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
