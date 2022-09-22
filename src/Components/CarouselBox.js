@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import forestDarkImg from '../Assets/forest-dark.jpg'
 import forestSnowImg from '../Assets/forest-snow.jpg'
+import forestSunnyImg from '../Assets/forest-sunny.jpeg'
 
 export default class CarouselBox extends Component {
   render() {
@@ -28,7 +29,7 @@ export default class CarouselBox extends Component {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={forestDarkImg} alt="forest" />
+          <img className="d-block w-100" src={forestSunnyImg} alt="forest" />
           <Carousel.Caption>
             <h3>Forest image</h3>
             <p>
